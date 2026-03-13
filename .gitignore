@@ -1,0 +1,17 @@
+# Database
+conductor.db
+conductor.db-shm
+conductor.db-wal
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+
+# Logs
+/tmp/conductor-*.log
+
+# OS
+.DS_Store
