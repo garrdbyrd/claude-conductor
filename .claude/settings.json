@@ -1,0 +1,10 @@
+{
+  "hooks": {
+    "Start": [
+      {
+        "type": "command",
+        "command": "bash \"$(git -C \"$PWD\" rev-parse --show-toplevel 2>/dev/null || echo \"$PWD\")/start.sh\""
+      }
+    ]
+  }
+}
