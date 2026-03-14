@@ -21,6 +21,7 @@ nohup uv run mcp_server.py   > /tmp/conductor-mcp.log  2>&1 &
 sleep 1
 
 # Register MCP server globally so all Claude sessions have conductor tools
+claude mcp remove conductor --scope user 2>/dev/null || true
 claude mcp add --transport http --scope user conductor http://localhost:8766/mcp 2>/dev/null || true
 
 # Pre-approve conductor MCP tools globally so players never get prompted
