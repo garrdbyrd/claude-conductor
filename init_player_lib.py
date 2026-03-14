@@ -44,8 +44,8 @@ def make_settings(repo: pathlib.Path) -> dict:
     return {
         "mcpServers": {
             "conductor": {
-                "type": "sse",
-                "url": f"http://{MCP_HOST}:{MCP_PORT}/sse",
+                "type": "http",
+                "url": f"http://{MCP_HOST}:{MCP_PORT}/mcp",
             }
         },
         "permissions": {

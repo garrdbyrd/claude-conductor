@@ -83,4 +83,4 @@ All tools are available in every Claude Code session on this machine.
 | Service | Default | Config file |
 |---------|---------|-------------|
 | Kanban WebUI | 9095 | `webui/server.py` |
-| MCP SSE server | 8766 | `mcp_server.py` |
+| MCP server | 8766 | `mcp_server.py` |

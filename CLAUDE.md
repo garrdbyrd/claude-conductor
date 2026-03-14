@@ -50,4 +50,4 @@ Always use `uv run` — never bare `python` or `python3`.
 ## Ports
 
 - **WebUI** → http://localhost:9095
-- **MCP server** → http://localhost:8766/sse
+- **MCP server** → http://localhost:8766/mcp

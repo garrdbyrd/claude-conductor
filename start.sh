@@ -21,11 +21,11 @@ nohup uv run mcp_server.py   > /tmp/conductor-mcp.log  2>&1 &
 sleep 1
 
 # Register MCP server globally so all Claude sessions have conductor tools
-claude mcp add --transport sse --scope user conductor http://localhost:8766/sse 2>/dev/null || true
+claude mcp add --transport http --scope user conductor http://localhost:8766/mcp 2>/dev/null || true
 
 # Pre-approve conductor MCP tools globally so players never get prompted
 uv run "$CONDUCTOR_DIR/setup-permissions.py" 2>/dev/null || true
 
 echo "Conductor started:"
 echo "  WebUI      → http://localhost:9095"
-echo "  MCP server → http://localhost:8766/sse"
+echo "  MCP server → http://localhost:8766/mcp"

@@ -223,5 +223,5 @@ def get_task_log(task_id: str) -> dict:
 if __name__ == "__main__":
     _db.init_db()
     _conn = _db.get_conn()
-    print("MCP server → http://localhost:8766/sse", flush=True)
-    mcp.run(transport="sse")
+    print("MCP server → http://localhost:8766/mcp", flush=True)
+    mcp.run(transport="streamable-http")
