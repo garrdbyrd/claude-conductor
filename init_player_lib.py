@@ -50,7 +50,18 @@ def make_settings(repo: pathlib.Path) -> dict:
         },
         "permissions": {
             "allow": [
-                "mcp__conductor__*",
+                # Conductor MCP tools — all pre-approved
+                "mcp__conductor__init_player",
+                "mcp__conductor__register_project",
+                "mcp__conductor__create_task",
+                "mcp__conductor__start_task",
+                "mcp__conductor__complete_task",
+                "mcp__conductor__block_task",
+                "mcp__conductor__request_input",
+                "mcp__conductor__reset_task",
+                "mcp__conductor__log_update",
+                "mcp__conductor__list_tasks",
+                "mcp__conductor__get_task_log",
                 "Read(*)",
                 f"Write({r}/**)",
                 f"Edit({r}/**)",
